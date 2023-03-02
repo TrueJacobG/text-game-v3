@@ -21,7 +21,6 @@
       "getDMG": ["Ala moja noga!", "Ja ci zaraz pokaze!", "Tylko na tyle cie stac!?", "Dawajcie chlopaki, co nam moze zrobic to cos!"],
       "deafeted": "To potwor nie podroznik! Uciekajmy!"
     },
-    "__comments": "###Peaceful movement below###",
     "text": "Spokojnay las pelen malych zwierzatek.",
     "options": ["Idz w lewo", "Idz do gory", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],
