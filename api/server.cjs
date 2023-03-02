@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-var map = require("./story/map.json");
+var map = require("./story/pl/map.json");
 
 app.get("/api/v1/test", (req, res) => {
   res.send({ status: "works" });

@@ -1,10 +1,10 @@
 {
-  "EAGLE TOWN": {
+  "eagle_town": {
     "fightingLocation": false,
     "text": "Witaj poszukiwaczu! Co chcialbys u nas kupic?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
-    "directions": ["weapons", "armors", "EAGLE TOWN", ""],
+    "directions": ["weapons", "armors", "eagle_town", ""],
     "shop": {
       "weapons": {
         "Wojownik": {
@@ -42,12 +42,12 @@
       }
     }
   },
-  "PARTEPOL": {
+  "partepol": {
     "fightingLocation": false,
     "text": "O prosze, kogo my tu mamy! Witaj poszukiwaczu przygod! W czym Ci moge pomoc?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
-    "directions": ["weapons", "armors", "PARTEPOL", ""],
+    "directions": ["weapons", "armors", "partepol", ""],
     "shop": {
       "weapons": {
         "Wojownik": {
@@ -85,12 +85,12 @@
       }
     }
   },
-  "FORTYLLA": {
+  "fortylla": {
     "fightingLocation": false,
     "text": "O prosze, kogo my tu mamy! Witaj poszukiwaczu przygod! W czym Ci moge pomoc?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
-    "directions": ["weapons", "armors", "FORTYLLA", ""],
+    "directions": ["weapons", "armors", "fortylla", ""],
     "shop": {
       "weapons": {
         "Wojownik": {
