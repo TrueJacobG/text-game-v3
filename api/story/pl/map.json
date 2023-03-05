@@ -1,13 +1,15 @@
 {
   "eagle_town": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [3, 2],
     "text": "Witamy w eagle_town. Czego u nas szukasz poszukiwaczu?",
     "options": ["Idz w lewo", "Idz w prawo", "Idz do sklepu", "EQ"],
     "optionsType": ["move", "move", "move", "eq"],
     "directions": ["grzybowice", "las_zbojow", "sklep", ""]
   },
   "las_zbojow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [5, 2],
     "text1": "Czego tu szukasz gagadku!? Mamy pokazac ci, gdzie raki zimoja?",
     "enemy": {
       "hp": 100,
@@ -27,7 +29,8 @@
     "directions": ["eagle_twon", "krolestow_aspkikli", "", ""]
   },
   "krolestow_aspkikli": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [5, 1],
     "text1": "Witttttaj poszukiwaczu. Chyba sie zbugiles w naszym lasku... Chlopcy do ataku! Pozrec to w calosci.",
     "enemy": {
       "hp": 150,
@@ -52,7 +55,8 @@
     "directions": ["las_zbojow", "jungla", "", ""]
   },
   "jungla": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [6, 1],
     "text1": "Kto naruszyl naszzzze terytorium? CO?! TO CZLOWIEK?! WEZO-ZOLNIERZE BRAC GO!!",
     "enemy": {
       "hp": 200,
@@ -77,14 +81,16 @@
     "directions": ["krolestow_aspkikli", "pola bohaterow", "wioska ardola", ""]
   },
   "pola_bohaterow": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [6, 0],
     "text": "'Wielu probowalo, ale tylko nieliczni zostali bohaterami zapamietanymi na wieki.' Ogromna ilosc marmurowych kolumn z podobiznami DZIESIECIU NAJWIEKSZYCH przyprawia Cie o bol glowy.",
     "options": ["Idz w dol", "", "", "EQ"],
     "optionsType": ["move", "", "", "eq"],
     "directions": ["jungla", "", "", ""]
   },
   "wioska_ardola": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [8, 1],
     "text1": "*Krasnoludzkie chichot* Oooo, prosze prosze, kogo my tu mamy! Chyba szukasz tu guza koleszko?!",
     "enemy": {
       "hp": 200,
@@ -109,14 +115,16 @@
     "directions": ["jungla", "partepol", "", ""]
   },
   "partepol": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [8, 2],
     "text": "*Witaj w stolicy! Znajdziesz w partepolu wszystko, czego dusza zapragnie. Co czwartek gra u nas zepsol Hajz3r-dol. Musisz wpasc i to zobaczyc! Swietnie graja ataki paniki.* Mimo milych slow, ktore slyszysz od witacza przy bramie miasta, czujesz w powietrzu niepokoj. Na ulicach jest pelno wojsk i obawia sie jednego, wojny z orkami...",
     "options": ["Idz do gory", "Idz w dol", "Idz do sklepu", "EQ"],
     "optionsType": ["move", "move", "move", "eq"],
     "directions": ["wioska ardola", "jaskinia_pod_partepolem", "sklep", ""]
   },
   "jaskinia_pod_partepolem": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [8, 5],
     "text1": "A co to za ludek! Widzisz go Marian? Dawaj lykniemy go w calosci, jak na wezo-ludzi przystalo!",
     "enemy": {
       "hp": 100,
@@ -136,7 +144,8 @@
     "directions": ["karawan_zlodziei", "partepol", "opuszczona_kopalnia", ""]
   },
   "opuszczona_kopalnia": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [10, 5],
     "text1": "*Odglosy spiskowania przy malym stoliku po srodku kopalni* O nie! Panowie reptilianie, on slyszal nasze plany! Brac go!",
     "enemy": {
       "hp": 250,
@@ -161,7 +170,8 @@
     "directions": ["jaskinia_pod_partepolem", "el_globingow", "bramy_witorgardu", ""]
   },
   "bramy_witorgardu": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [10, 6],
     "text1": "A kto ty byc?! Co ty tu robic?! Wypad stad maly!",
     "enemy": {
       "hp": 250,
@@ -186,7 +196,8 @@
     "directions": ["opuszczona_kopalnia", "plac_krola_katoralda", "", ""]
   },
   "plac_krola_katoralda": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [10, 7],
     "text1": "*Z fontanny stojacej na srodku placu wychodza cztero metrowe olbrzymy...*",
     "enemy": {
       "hp": 300,
@@ -211,7 +222,8 @@
     "directions": ["skarbnica", "bramy_witorgardu", "", ""]
   },
   "skarbnica": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [9, 7],
     "text1": "Patrzcie to on pokonal wszystkich naszych zolnierzy! Brac go!",
     "enemy": {
       "hp": 300,
@@ -231,14 +243,16 @@
     "directions": ["browla", "plac_krola_katoralda", "", ""]
   },
   "browla": {
-    "fightingLocation": false,
-    "text": "Gratulacje udalo Ci sie dojsc do V3N6eXN0a2llZ28gbmFqbGVwc3plZ28h celu swojej podrozy! Dziekuje za przejscie mojej gry! Mozesz dalej podrozowac po mapie i szukac ciekawych smaczkow! ~ JakubG \n twitter.com/TrueJacobG",
+    "locationType": "city",
+    "place": [8, 7],
+    "text": "Gratulacje udalo Ci sie dojsc do SGFwcHkgQmlydGhkYXkh celu swojej podrozy! Dziekuje za przejscie mojej gry! Mozesz dalej podrozowac po mapie i szukac ciekawych smaczkow! ~ github.com/TrueJacobG",
     "options": ["Idz w prawo", "", "", "EQ"],
     "optionsType": ["move", "", "", "eq"],
     "directions": ["skarbnica", "", "", ""]
   },
   "el_globingow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [10, 4],
     "text1": "Przy wyjsciu z jaskini zaczepia Cie grupka globindzkich rabusiow. Chca zawinac twoja zaszetke ze zlotem.",
     "enemy": {
       "hp": 200,
@@ -263,14 +277,16 @@
     "directions": ["rynek_globingow", "opuszczona_kopalnia", "", ""]
   },
   "rynek_globingow": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [10, 3],
     "text": "Globingi to szemrane gostki.. ale bardzo kochaja pieniadze. W tej dolinie od setek lat sprzedaja przedmioty niewiadomego pochodzenia. Niestety, nie masz globindzkich denarow, wiec nie dobijesz z nimi targu.",
     "options": ["Idz do gory", "Idz w dol", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],
     "directions": ["zbrojownia_globingow", "el_globingow", "", ""]
   },
   "zbrojownia_globingow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [10, 2],
     "text1": "Wchodzisz do zbrojowni globingow, ktora jest jednoczesnie muzeum zdobyczy globinskich poszukiwaczy przygod. Jestes swiadkiem nieudolnej kradziezy. Grupka wlamywaczy ze skarpetami na glowach probuje ukrasc zbroje Sir Grzyboleta. Gdy Cie dostrzegaja zaczynaja panikowac... to znaczy atakowac Cie?...",
     "enemy": {
       "hp": 200,
@@ -295,7 +311,8 @@
     "directions": ["rynek_globingow", "", "", ""]
   },
   "karawan_zlodziei": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [6, 5],
     "text1": "Przechodzisz obok rozbitego karawanu. Nad soba widzisz chmare wywern. Widzisz jak z karawanu wyskakuje skraja zlodziei. Wywerny nurkuja i rozrywaja rabusiow na strzepy. Po krotkiej chwili konsumpcji dostrzegaja Cie i ruszaja w Twoja strone.",
     "enemy": {
       "hp": 250,
@@ -315,14 +332,16 @@
     "directions": ["jurny_park", "jaskinia_pod_partepolem", "", ""]
   },
   "jurny_park": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [6, 7],
     "text": "Spokojny park, w ktorym zyja kroliczki wielkanocne.",
     "options": ["Idz do gory", "Idz w lewo", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],
     "directions": ["karawan_zlodziei", "opuszczony_zamek_orkow", "", ""]
   },
   "opuszczony_zamek_orkow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [5, 7],
     "text1": "Przechodzisz przez opuszczony_zamek_orkow. W pewnym momencie slyszysz dobiegajace szczekanie z piwnicy. Postanawiasz to sprawdzic. Gdy otwierasz klape prowadzaca do piwnicy, wyskakuja z niej wilki.",
     "enemy": {
       "hp": 100,
@@ -337,7 +356,8 @@
     "directions": ["chatka_na_rzece_ulululu", "jurny_park", "", ""]
   },
   "chatka_na_rzece_ulululu": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [4, 7],
     "text1": "Przechodzisz obok dziwnie wygladajacej chatki na granicy bagien. Z jej srodka wydobywaja sie dziwne dzwieki przypominajace rytualy szamanckie. *BUUUUM!* Chatka eksploduje! Z jej srodka wypada szaman ork, ktoremu pala sie obrania. *CHLUP! UFFF! Ale ulga! Dobrze, ze nie zakopalem tego bajorka, co ja teraz bym pocza! ... A niech cie Kurdowidalontku! Znowu mnie przebiegly pirat oszukal na proch strzelniczy! Tyle razy mu powtarzalem, C Z Y S T Y proch, ale jak zwykle dal mi jakie.... A KTO TO TAM SIEDZI ZA DRZEWEM! TO CZLOWIEK! CHOC TU ZARAZ ZROBIE Z CIEBIE ZUPE!!*",
     "enemy": {
       "hp": 100,
@@ -362,7 +382,8 @@
     "directions": ["bagna_orkow", "opuszczony_zamek_orkow", "", ""]
   },
   "bagna_orkow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [3, 7],
     "text1": "Przechodzisz przez bagna. Masz cicha nadzieje, ze nie napotkasz na zadnych orkow. Gdy nagle... *CZLOWIEK NA NASZYM TERENIE!!! BRAC GO* Rozpedzony oddzial piecio metrowych stworow biegnie w twoja strone. Uciekasz przez bagna az ladujesz na pobliskiej plazy. Chowasz sie przez chwile w opuszczonym domku rybackim. Gdy czujesz, ze jest juz bezpiecznie wychodzisz z chatki napotykajac wlasciciela domostwa, jest nim Gali Rybakov... Twoj stary znajomy ze szkoly, ktory wisi Ci sporo pieniedzy!!!",
     "enemy": {
       "hp": 100,
@@ -387,7 +408,8 @@
     "directions": ["cmentarz_magow", "evi_logrowice", "chatka_na_rzece_ulululu", ""]
   },
   "evi_logrowice": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [3, 6],
     "text1": "Trafiasz na mala studnie na granicy bagien i gor Aldogordis. *Przez gory nie dam rady przejsc, nie jestem szalony* Po skonczonym zwiedzaniu postanawiasz zawrocic, ale na sam koniec wrzucasz monete do studni. *OOO PIENIAZEK PIENIAZEK* Ze studni wyskakuje ogromny Pingwin Lichwiarz... *TY MI ODDAC SWOJE MONETY!*",
     "enemy": {
       "hp": 300,
@@ -412,21 +434,24 @@
     "directions": ["bagna_orkow", "", "", ""]
   },
   "cmentarz_magow": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [2, 7],
     "text": "Widzisz na cmentarzu gildii magow wiele porozkopywanych grobow. Prawdopodobnie orki szukaly tu magicznych artefaktow, ktore mialyby im pomoc w nadchodzacej walce z ludzmi.",
     "options": ["Idz w lewo", "Idz do gory", "Idz w prawo", "EQ"],
     "optionsType": ["move", "move", "move", "eq"],
     "directions": ["klify_syren", "kaplica_magow", "bagna_orkow", ""]
   },
   "kaplica_magow": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [2, 6],
     "text": "Maly kosciulek na wzgorzu. Bije od niego magia na kilometry.",
     "options": ["Idz w dol", "", "", "EQ"],
     "optionsType": ["move", "", "", "eq"],
     "directions": ["cmentarz_magow", "", "", ""]
   },
   "klify_syren": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [0, 7],
     "text1": "*Witaj podrozniku - :DDDD - Czego u nas szukasz? Moze skusisz sie na caluska.... I ODDASZ MI SWOJA DUSZE!*",
     "enemy": {
       "hp": 250,
@@ -451,21 +476,24 @@
     "directions": ["fortylla", "cmentarz_magow", "", ""]
   },
   "fortylla": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [0, 3],
     "text": "Przechodzisz przez miasto portowe fortylla, jedno z najwiekszych w calej krainie. Dookola widzisz pelno piratow i szemranych typow. fortylla prowadzi nie pisana wojne z innym miastem portowym, fortys. Pare lat temu bylo to jedno wielkie miasto, ale zostalo podzielone po wprowadzeniu zakazu picia rumu. Mieszkancy, wtedy jeszcze dzielnicy fortylla, rozpoczeli bunt. Wladze miasta nie mogac poradzic sobie z zamieszkami postanowili podzielic pradawne miasto portowe na fortys i Fortylle.",
     "options": ["Idz do gory", "Idz w dol", "Idz do sklepu", "EQ"],
     "optionsType": ["move", "move", "move", "eq"],
     "directions": ["fortys", "klify_syren", "sklep", ""]
   },
   "fortys": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [0, 2],
     "text": "Miasto fortys to spokojne miejsce. Panujace tu prawa sprawily, ze jest to najspokojniejsza osada portowa. Tylko jedna osoba tu nie pasuje... Widzisz jak w pospiechu odplywa maly stateczek. Na fladze ma napis *Statek Kurdowidalontka*. Chyba ten maly oszust nagrabil sobie u jakiegos orka...",
     "options": ["Idz do gory", "Idz w dol", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],
     "directions": ["plaza_piratow", "fortylla", "", ""]
   },
   "plaza_piratow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [0, 1],
     "text1": "Miedzy miastem fortys, a polaciami wydm trafiasz na plaze. Widzisz na niej grupke zeglazy, ktorzy smaza kielbaski nad ognisiem. Jestes weganem, wiec postanawiasz pokazac im gdzie ich miejsce...",
     "enemy": {
       "hp": 200,
@@ -490,7 +518,8 @@
     "directions": ["fortys", "wydmy_lupiezcow", "", ""]
   },
   "wydmy_lupiezcow": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [1, 1],
     "text1": "*Szybciej Wadron! Musimy zakopac ten skarb i wracac, bo szef nie da nam spokoju! - powiedzial Gali. - Ciekawe, skad szef ma tyle pieniedzy. Pewnie ukradl, jak zwykle - powiedzial Wadron - No pewnie, ze ukradl! Oszukiwal orki na proch strzelniczy! Wciskal im ze to czysty proch, a tak naprawde byly to zmielone... KURDE WADRON KTOS NAS OBSERWUJE ZZA WYDMY! NA NIEGOOOOO!*",
     "enemy": {
       "hp": 250,
@@ -515,7 +544,8 @@
     "directions": ["plaza_piratow", "kuter_rybacki", "wieza_zwiadowcza", ""]
   },
   "kuter_rybacki": {
-    "fightingLocation": true,
+    "locationType": "fight",
+    "place": [1, 0],
     "text1": "Przechodzac obok kutra rybackiego slyszysz wydobywajace sie z jego wnetrza strzaly. Postanawiasz to sprawdzic. W srodku znajdujesz szajke piratow, ktorzy kloca sie o pieniadze i rum. Teraz ich najwiekszym problemem stajesz sie ty....",
     "enemy": {
       "hp": 250,
@@ -535,14 +565,16 @@
     "directions": ["wydmy_lupiezcow", "", "", ""]
   },
   "wieza_zwiadowcza": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [2, 1],
     "text": "wieza_zwiadowcza na przedmiesciach Grzybowic.",
     "options": ["Idz w lewo", "Idz w dol", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],
     "directions": ["wydmy_lupiezcow", "grzybowice", "", ""]
   },
   "grzybowice": {
-    "fightingLocation": false,
+    "locationType": "city",
+    "place": [2, 2],
     "text": "Gdy mijasz wrota miasta grzybo-ludkow widzisz zamieszanie w miescie. Wszyscy poszukuja zbroi Sir Grzyboleta. Zginela pare dni temu i nikt nie wie, gdzie sie podziewa.",
     "options": ["Idz do gory", "Idz w prawo", "", "EQ"],
     "optionsType": ["move", "move", "", "eq"],

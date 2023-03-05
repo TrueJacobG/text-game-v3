@@ -1,6 +1,6 @@
 {
   "eagle_town": {
-    "fightingLocation": false,
+    "locationType": "shop",
     "text": "Witaj poszukiwaczu! Co chcialbys u nas kupic?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
@@ -43,7 +43,7 @@
     }
   },
   "partepol": {
-    "fightingLocation": false,
+    "locationType": "shop",
     "text": "O prosze, kogo my tu mamy! Witaj poszukiwaczu przygod! W czym Ci moge pomoc?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
@@ -86,7 +86,7 @@
     }
   },
   "fortylla": {
-    "fightingLocation": false,
+    "locationType": "shop",
     "text": "O prosze, kogo my tu mamy! Witaj poszukiwaczu przygod! W czym Ci moge pomoc?",
     "options": ["Obejrzyj bronie", "Obejrzyj zbroje", "Wyjdz ze sklepu", "EQ"],
     "optionsType": ["shop", "shop", "move", "eq"],
